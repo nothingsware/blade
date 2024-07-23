@@ -58,18 +58,14 @@ audio {
 	display: none; /* Hide the default audio controls */
 }
 
-audio {
-	display: none; /* Hide the default audio controls */
-}
-
 .mute-button {
 	position: absolute;
 	top: 20px;
 	right: 20px;
 	width: 50px;
 	height: 50px;
-	background: black;
-	color: white;
+	background: rgb(255, 255, 255);
+	color: rgb(5, 5, 5);
 	display: flex;
 	align-items: center;
 	justify-content: center;
