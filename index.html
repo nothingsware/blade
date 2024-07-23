@@ -31,6 +31,7 @@
     <div id="muteButton" class="mute-button">
         <i id="muteIcon" class="fa-solid fa-volume-high"></i>
     </div>
+
     <div class="container">
         <img class="avatar" src="/public/img/idk.jpg" alt="Avatar">
 
@@ -107,15 +108,13 @@
     </div>
 
     <script>
-        // JavaScript for Mute/Unmute functionality
-        document.addEventListener('DOMContentLoaded', (event) => {
+           document.addEventListener('DOMContentLoaded', () => {
             const audio = document.getElementById('myAudio');
             const muteButton = document.getElementById('muteButton');
             const muteIcon = document.getElementById('muteIcon');
 
             // Check and handle autoplay
             audio.play().catch((error) => {
-                // Handle autoplay errors if necessary
                 console.log('Autoplay failed:', error);
             });
 
