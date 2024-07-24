@@ -31,6 +31,7 @@
     <div id="muteButton" class="mute-button">
         <i id="muteIcon" class="fa-solid fa-volume-high"></i>
     </div>
+<button id="playAudioButton" style="position: absolute; top: 20px; right: 20px;">Play Audio</button>
 
     <div class="container">
         <img class="avatar" src="/public/img/idk.jpg" alt="Avatar">
@@ -106,14 +107,18 @@
 </div>
 
     <script>
-              document.addEventListener('DOMContentLoaded', () => {
+             document.addEventListener('DOMContentLoaded', () => {
             const audio = document.getElementById('myAudio');
             const muteButton = document.getElementById('muteButton');
             const muteIcon = document.getElementById('muteIcon');
+            const playAudioButton = document.getElementById('playAudioButton');
 
-            // Ensure audio plays
-            audio.play().catch((error) => {
-                console.log('Autoplay failed:', error);
+            // Handle user interaction to start audio
+            playAudioButton.addEventListener('click', () => {
+                audio.play().catch((error) => {
+                    console.log('Play failed:', error);
+                });
+                playAudioButton.style.display = 'none'; // Hide the button once audio starts
             });
 
             // Add a listener to the mute button
