@@ -106,16 +106,17 @@
 </div>
 
     <script>
-           document.addEventListener('DOMContentLoaded', () => {
+              document.addEventListener('DOMContentLoaded', () => {
             const audio = document.getElementById('myAudio');
             const muteButton = document.getElementById('muteButton');
             const muteIcon = document.getElementById('muteIcon');
 
-            // Check and handle autoplay
+            // Ensure audio plays
             audio.play().catch((error) => {
                 console.log('Autoplay failed:', error);
             });
 
+            // Add a listener to the mute button
             muteButton.addEventListener('click', () => {
                 if (audio.muted) {
                     audio.muted = false;
