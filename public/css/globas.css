@@ -54,30 +54,33 @@ body {
 	background-color: #101010;
 }
 
-audio {
-	display: none; /* Hide the default audio controls */
+.play-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #2F3136;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.mute-button {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	width: 50px;
-	height: 50px;
-	background: rgb(255, 255, 255);
-	color: rgb(5, 5, 5);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: transform 0.3s ease;
+.play-button:hover {
+    background-color: #40444b;
+    transform: scale(1.1);
 }
 
-.mute-button:hover {
-	transform: scale(1.1);
+.play-icon {
+    font-size: 24px;
 }
 
-.mute-button i {
-	font-size: 24px; /* Size of the icon */
+.play-text {
+    display: none; /* Hidden by default, can be shown if needed */
 }
