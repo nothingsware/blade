@@ -31,7 +31,11 @@
     <div id="muteButton" class="mute-button">
         <i id="muteIcon" class="fa-solid fa-volume-high"></i>
     </div>
-<button id="playAudioButton" style="position: absolute; top: 20px; right: 20px;">Play Audio</button>
+    
+<button id="playAudioButton" class="play-button">
+        <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+        <span class="play-text">Play Audio</span>
+    </button>
 
     <div class="container">
         <img class="avatar" src="/public/img/idk.jpg" alt="Avatar">
@@ -107,7 +111,7 @@
 </div>
 
     <script>
-             document.addEventListener('DOMContentLoaded', () => {
+       document.addEventListener('DOMContentLoaded', () => {
             const audio = document.getElementById('myAudio');
             const muteButton = document.getElementById('muteButton');
             const muteIcon = document.getElementById('muteIcon');
