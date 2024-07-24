@@ -5,37 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="#2F3136" name="theme-color">
-    <meta content="@yuk" property="og:title">
-    <title>@yuk</title>
+    <meta content="@brennen" property="og:title">
+    <title>@brennen</title>
     <link rel="stylesheet" href="public/css/global.css">
     <link rel="stylesheet" href="public/css/users.css">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&amp;f[]=array@400&amp;display=swap" rel="stylesheet">
     <link rel="icon" href="/public/img/icon.png" type="image/x-icon">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Creepster&family=Gloria+Hallelujah&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/styles.css"> <!-- Link to your CSS file -->
 </head>
 
-<body style="font-family: Satoshi, sans-serif; cursor: url('/cdn/files/cursor/853683708099821598.cur'), auto; background-color: #222222;">
+<body style="font-family: Satoshi, sans-serif; cursor: url('/cdn/files/cursor/853683708099821598.cur'), auto; background-color: #ffffff;">
     <video class="background" autoplay muted loop>
         <source src="/public/img/back.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <audio id="myAudio" loop>
         <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
     </audio>
 
     <div id="muteButton" class="mute-button">
         <i id="muteIcon" class="fa-solid fa-volume-high"></i>
     </div>
+
+    <button id="playAudioButton" class="play-button">
+        <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+        <span class="play-text">Play Audio</span>
+    </button>
+
     <div class="container">
-        <img class="avatar" src="/public/img/sq.png" alt="Avatar">
+        <img class="avatar" src="/public/img/idk.jpg" alt="Avatar">
 
         <div class="profileLayout">
-            <h1 class="profileUsername" style="color: #ffffff; text-shadow: 0 0 20px #ffffff;">@yuk</h1>
+            <h1 class="profileUsername" style="color: #ffffff; text-shadow: 0 0 20px #ffffff;">@Brennen</h1>
 
             <div class="profileBadges">
                 <div class="profileBadge dev">
@@ -45,8 +51,8 @@
                 </div>
 
                 <div class="profileBadge certif">
-                    <svg class="profileBadge" xmlns="http://www.w3.org/2000/svg" style="fill: #ffffff; filter: drop-shadow(0 0 1.5px #ffffff) !important;" width="1em" height="1em" viewBox="1 1.5 22 21">
-                        <path d="m8.6 22.5l-1.9-3.2l-3.6-.8l.35-3.7L1 12l2.45-2.8l-.35-3.7l3.6-.8l1.9-3.2L12 2.95l3.4-1.45l1.9 3.2l3.6.8l-.35 3.7L23 12l-2.45 2.8l.35 3.7l-3.6.8l-1.9 3.2l-3.4-1.45l-3.4 1.45Zm2.35-6.95L16.6 9.9l-1.4-1.45l-4.25 4.25l-2.15-2.1L7.4 12l3.55 3.55Z"></path>
+                    <svg class="profileBadge" xmlns="http://www.w3.org/2000/svg" style="fill: #ffffff; filter: drop-shadow(0 0 1.5px #0b0b0b) !important;" width="1em" height="1em" viewBox="1 1.5 22 21">
+                        <path d="M8.6 22.5L6.7 19.3L3.1 18.5L3.45 14.8L1 12L3.45 9.2L3.1 5.5L6.7 4.7L8.6 1.5L12 2.95L15.4 1.5L17.3 4.7L20.9 5.5L20.55 9.2L23 12L20.55 14.8L20.9 18.5L17.3 19.3L15.4 22.5L12 21.05L8.6 22.5ZM10.95 15.55L16.6 9.9L15.2 8.45L10.95 12.7L8.8 10.6L7.4 12L10.95 15.55Z"></path>
                     </svg>
                 </div>
 
@@ -54,8 +60,8 @@
                     <i class="fa-solid fa-crown"></i>
                 </div>
             </div>
-            <h3 id="typingText" style="color: #ffffff;" class="profileBio"></h3>
-            <div id="typingTexts" style="display: none;">Hello, Welcome!</div>
+            <h3 id="typingText" style="color: #fbfbfb;" class="profileBio"></h3>
+            <div id="typingTexts" style="display: none;">Follow my roblox and add me on discord  ^_^</div>
             <script src="/public/js/typing.js"></script>
         </div>
 
@@ -63,23 +69,23 @@
             <div class="presenceContainer">
                 <div class="discordInfos">
                     <div class="discordAvatar">
-                        <img class="avatarImage" src="/public/img/b97ce44d1871ecb672d304aee55611fa.png" alt="Discord Avatar">
+                        <img class="avatarImage" src="/public/img/sh.jpg" alt="Discord Avatar">
                         <img class="discordStatus" src="/public/img/idle.png" alt="Idle Status">
                     </div>
                     <div class="discordActivity">
                         <div class="discordUser">
                             <div class="discordUserDiv">
-                                <span>yukarist</span>
+                                <span>@Brennen_n</span>
                                 <div class="discordUserBadges">
-                                    <div class="discordUserBadge" data-tooltip="Subscriber since July 20, 2024">
+                                    <div class="discordUserBadge" data-tooltip="Not Subcribed">
                                         <img src="/public/img/booster.png" alt="Discord Badge">
                                     </div>
-                                    <div class="discordUserBadge" data-tooltip="Server boosting since April 5, 2024">
+                                    <div class="discordUserBadge" data-tooltip="Not Subcribed">
                                         <img src="/public/img/boost.png" alt="Discord Badge">
                                     </div>
                                 </div>
                             </div>
-                            <h3>paytyn ❤</h3>
+                            <h3>A freelancer looking for work!</h3>
                         </div>
                         <div class="discordActivityImage"></div>
                     </div>
@@ -88,46 +94,47 @@
         </div>
 
         <div class="linkedAccounts">
-            <a data-type="TikTok" class="linkedAccountsRedirect" target="_blank" href="https://www.tiktok.com/@yukaristt" aria-label="TikTok Profile">
-                <i class="fa-brands fa-tiktok tiktok-icon"></i>
-            </a>
-            <a data-type="Spotify" class="linkedAccountsRedirect" target="_blank" href="https://open.spotify.com/user/camfabre554?si=EAZABawDQdOs3H60SMEqmQ&nd=1&dlsi=240879faeead4cba">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="2.02 2.02 19.98 19.98">
-                    <path fill="currentColor" d="M12.01 2.019c-5.495 0-9.991 4.496-9.991 9.991c0 5.494 4.496 9.99 9.991 9.99c5.494 0 9.99-4.496 9.99-9.99c0-5.495-4.446-9.991-9.99-9.991zm4.595 14.436c-.199.299-.549.4-.85.201c-2.349-1.45-5.296-1.75-8.793-.951c-.348.102-.648-.148-.748-.449c-.101-.35.149-.648.45-.749c3.795-.85 7.093-.499 9.69 1.1c.35.149.4.548.251.848zm1.2-2.747c-.251.349-.7.499-1.051.249c-2.697-1.646-6.792-2.148-9.939-1.148c-.398.101-.85-.1-.949-.498c-.101-.402.1-.852.499-.952c3.646-1.098 8.143-.548 11.239 1.351c.3.149.45.648.201.998zm.099-2.799c-3.197-1.897-8.542-2.097-11.59-1.146a.938.938 0 0 1-1.148-.6a.937.937 0 0 1 .599-1.151c3.547-1.049 9.392-.85 13.089 1.351c.449.249.599.849.349 1.298c-.25.35-.849.498-1.299.248z"></path>
+            <a data-type="Spotify" class="linkedAccountsRedirect" target="_blank" href="https://open.spotify.com/user/31yzojhjqpqmu3k6jr3dv3coxouq">
+                <svg xmlns="http://www.w3.org/2000/svg" class="spotifyIcon" fill="#1DB954" height="32px" viewBox="0 0 24 24" width="32px">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm4.18 14.58a.734.734 0 01-1.02.2c-2.8-1.72-6.34-2.11-10.48-1.08a.746.746 0 01-.36-1.44c4.53-1.14 8.45-.68 11.57 1.22.34.21.44.67.2 1.1zm1.47-3.03a.92.92 0 01-1.28.27c-3.2-1.97-8.08-2.55-11.86-1.29a.923.923 0 01-.53-1.76c4.3-1.3 9.64-.63 13.33 1.48.43.26.56.85.34 1.3zm.13-3.64c-4.05-2.37-10.7-2.59-14.44-1.26-.57.2-1.21-.1-1.4-.66a1.1 1.1 0 01.68-1.41c4.23-1.44 11.51-1.19 16.14 1.5.52.31.69 1 .38 1.55a1.115 1.115 0 01-1.36.28zm-.48-3.25c-.449-.299-.549-.898-.3-1.355 3.16-4.3 3.21-7.85 1.38-10.52-.37-.58-1.14-.76-1.74-.37-4.19 2.74-7.01 6.8-7.59 11.21-.1.875.55 1.655 1.36 1.75.98.113 1.76-.48 1.98-1.35.55-3.13 2.27-5.82 4.6-7.56.36-.3.87-.5 1.42-.58.93-.12 1.72.56 1.88 1.38.24 1.02-.17 2.06-1.04 2.63-1.43.9-2.9 1.62-4.44 2.24-.5.19-.71.74-.42 1.16.3.49.98.7 1.48.46 1.62-.62 3.35-1.16 5.19-1.54 1.02-.16 1.92.58 2.17 1.54.09.34.08.7-.02 1.03-.3.81-1.06 1.38-1.88 1.43-.77.04-1.55-.36-2.09-1.02z"></path>
                 </svg>
+                <span class="linkedAccountsText">Listen on Spotify</span>
             </a>
-            <a data-type="YouTube" class="linkedAccountsRedirect" target="_blank" href="https://www.youtube.com/channel/UC1cA6Z7Y5DrKGpFWeBt4YFw">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M23.498 6.186c-.291-1.096-1.145-1.95-2.241-2.24C19.245 3.5 12 3.5 12 3.5s-7.245 0-9.258.446c-1.096.29-1.95 1.144-2.241 2.24C0 8.199 0 12 0 12s0 3.801.501 5.814c.291 1.096 1.145 1.95 2.241 2.24C4.755 20.5 12 20.5 12 20.5s7.245 0 9.258-.446c1.096-.29 1.95-1.144 2.241-2.24C24 15.801 24 12 24 12s0-3.801-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+            <a data-type="YouTube" class="linkedAccountsRedirect" target="_blank" href="https://www.youtube.com/@brennen">
+                <svg xmlns="http://www.w3.org/2000/svg" class="youtubeIcon" fill="#FF0000" height="32px" viewBox="0 0 24 24" width="32px">
+                    <path d="M19.3 8.7c-.1-.8-.8-1.4-1.6-1.5-1.4-.1-2.8-.1-4.2-.1-1.4 0-2.8 0-4.2.1-.8.1-1.5.7-1.6 1.5-.2 1.6-.2 3.2-.2 4.8s0 3.2.2 4.8c.1.8.8 1.4 1.6 1.5 1.4.1 2.8.1 4.2.1s2.8 0 4.2-.1c.8-.1 1.5-.7 1.6-1.5.2-1.6.2-3.2.2-4.8s0-3.2-.2-4.8zM10 14.4v-4.8l4.8 2.4-4.8 2.4z"></path>
                 </svg>
+                <span class="linkedAccountsText">Watch on YouTube</span>
             </a>
         </div>
     </div>
 
-    <div style="display: none;" id="curEffClr">#ffffff</div>
-    <script src="/public/js/cur-snow.js"></script>
-
     <script>
-        const audio = document.getElementById('myAudio');
-        const muteButton = document.getElementById('muteButton');
-        const muteIcon = document.getElementById('muteIcon');
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('myAudio');
+            const muteButton = document.getElementById('muteButton');
+            const muteIcon = document.getElementById('muteIcon');
+            const playAudioButton = document.getElementById('playAudioButton');
 
-        muteButton.addEventListener('click', () => {
-            if (audio.muted) {
-                audio.muted = false;
-                muteIcon.classList.remove('fa-volume-xmark');
-                muteIcon.classList.add('fa-volume-high');
-            } else {
-                audio.muted = true;
-                muteIcon.classList.remove('fa-volume-high');
-                muteIcon.classList.add('fa-volume-xmark');
-            }
-        });
+            // Handle user interaction to start audio
+            playAudioButton.addEventListener('click', () => {
+                audio.play().catch((error) => {
+                    console.log('Play failed:', error);
+                });
+                playAudioButton.style.display = 'none'; // Hide the button once audio starts
+            });
 
-        // Start the audio manually for testing purposes
-        document.body.addEventListener('click', () => {
-            audio.play().catch(error => {
-                console.error('Audio play failed:', error);
+            // Add a listener to the mute button
+            muteButton.addEventListener('click', () => {
+                if (audio.muted) {
+                    audio.muted = false;
+                    muteIcon.classList.remove('fa-volume-mute');
+                    muteIcon.classList.add('fa-volume-high');
+                } else {
+                    audio.muted = true;
+                    muteIcon.classList.remove('fa-volume-high');
+                    muteIcon.classList.add('fa-volume-mute');
+                }
             });
         });
     </script>
